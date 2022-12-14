@@ -14,28 +14,28 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="container header-nav">
-            <nav class="main-nav">
+    <header class="header">
+        <div class="container header__group">
+            <nav class="nav">
                 
-                <a href="./index.html" lang="en" class="logo link"> <span class="accent">Web</span>Studio</a>
+                <a href="./index.html" lang="en" class="logo link"> <span class="logo logo--accent">Web</span>Studio</a>
                
                 
-                <ul class="nav-list list">
-                    <li class="item nav-item.no-margin"> <a href="./index.html" class="nav-link link current">Студія</a></li>
-                    <li class="item nav-item.no-margin"> <a href="./portfolio.html" class="nav-link link">Портфоліо</a></li>
-                    <li class="item nav-item.no-margin"> <a href="" class="nav-link link">Контакти</a></li>
+                <ul class="nav__list list">
+                    <li class="nav__item nav__item--no-margin"> <a href="./index.html" class="nav__link link nav__link--current">Студія</a></li>
+                    <li class="nav__item nav__item--no-margin"> <a href="./portfolio.html" class="nav__link link">Портфоліо</a></li>
+                    <li class="nav__item nav__item--no-margin"> <a href="" class="nav__link link">Контакти</a></li>
                 </ul>
             </nav>  
         
-            <ul class="contact-list list">
-                <li class="item">
+            <ul class="header__contact list">
+                <li class="contact__item">
                     <a href="mailto:info@devstudio.com" class="header-mail link">
                         <svg class="icon-mail" width="16" height="12">
                           <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a>
                 </li>
-                <li class="item">
+                <li class="contact__item">
                     <a href="tel:+380961111111" class="header-phone link">
                         <svg class="icon-mobile" width="10" height="16">
                           <use href="./images/icons.svg#icon-smartphone"></use>
@@ -46,14 +46,20 @@
         
     </header>
     
+<!-- ----------------------------------HERO--------------------------------- -->
+
 <main>
-<section class="section hero overlay">
+
+
+<section class="section hero hero-overlay">
     <div class="container">
-<h1 class="hero-name">Ефективні рішення для вашого бізнесу</h1>
+<h1 class="hero__name">Ефективні рішення для вашого бізнесу</h1>
     
-<button type="button" class="header-button" data-modal-open>Замовити послугу</button>
+<button type="button" class="btn btn--hero-look" data-modal-open>Замовити послугу</button>
     </div>
 </section>
+
+<!-- ---------------------------------------ADVANTAGES---------------------------------- -->
 
 <section class="section no-padding">
    <div class="container">
@@ -99,31 +105,32 @@
 </div>
 </section>
 
+<!-- --------------------------------------PRODUCTS------------------------ -->
 
 <section class="section">
     <div class="container">
-    <h2 class="section-title">Чим ми займаємося</h2>
-    <ul class="list flex-container-studio">
-        <li class="section-item">
-            <div class="product-thumb">
+    <h2 class="section__title">Чим ми займаємося</h2>
+    <ul class="list section__list">
+        <li class="section__item">
+            <div class="section__thumb">
             <img src="./images/box1.jpg" width="370" height="294" alt="Планування">
-            <p class="product-overlay">
+            <p class="section__overlay">
                 десктопні додатки
             </p>
         </div>
         </li>
-        <li class="section-item">
-            <div class="product-thumb">
+        <li class="section__item">
+            <div class="section__thumb">
             <img src="./images/box2.jpg" width="370" height="294" alt="Розробка додатків">
-            <p class="product-overlay">
+            <p class="section__overlay">
 мобільні додатки
             </p>
         </div>
         </li>
-        <li class="section-item">
-            <div class="product-thumb">
+        <li class="section__item">
+            <div class="section__thumb">
             <img src="./images/box3.jpg" width="370" height="294" alt="Дизайн">
-            <p class="product-overlay">
+            <p class="section__overlay">
 дизайнерські рішення
             </p>
         </div>
@@ -131,10 +138,13 @@
     </ul>
 </div>
 </section>
+
+<!-- -------------------------------OUW TEAM------------------------- -->
+
 <section class="section team">
     <div class="container">
-    <h2 class="section-title">Наша команда</h2>
-    <ul class="list flex-container-studio">
+    <h2 class="section__title">Наша команда</h2>
+    <ul class="list section__list">
         <li class="team-item">
             <img src="./images/img1.jpg" width="270" height="260" alt="Ігор Дем'яненко">
             <div class="team-card">
@@ -296,48 +306,53 @@
     </ul>
 </div>
 </section>
+
+
+<!-- ---------------------CLIENTS-------------------------------- -->
+
+
 <section class="section">
     <div class="container">
-        <h2 class="section-title">Постійні клієнти</h2>
-        <ul class="list clients">
-            <li class="client-item">
-                <a  class="client-link link" href="" aria-label="YA & CO" target="_blank" rel="noopener noreferrer">
-                    <svg class="client-icon" width="106" height="60">
+        <h2 class="section__title">Постійні клієнти</h2>
+        <ul class="list client">
+            <li class="client__item">
+                <a  class="client__link link" href="" aria-label="YA & CO" target="_blank" rel="noopener noreferrer">
+                    <svg class="client__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-logo1"></use>
                       </svg>
                 </a>
             </li>
-            <li class="client-item">
-                <a  class="client-link link" href="" aria-label="TEGLINE HERE" target="_blank" rel="noopener noreferrer">
-                    <svg class="client-icon" width="106" height="60">
+            <li class="client__item">
+                <a  class="client__link link" href="" aria-label="TEGLINE HERE" target="_blank" rel="noopener noreferrer">
+                    <svg class="client__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-logo2"></use>
                       </svg>
                 </a>
             </li>
-            <li class="client-item">
-                <a  class="client-link link" href="" aria-label="COMPANY" target="_blank" rel="noopener noreferrer">
-                    <svg class="client-icon" width="106" height="60">
+            <li class="client__item">
+                <a  class="client__link link" href="" aria-label="COMPANY" target="_blank" rel="noopener noreferrer">
+                    <svg class="client__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-logo3"></use>
                       </svg>
                 </a>
             </li>
-            <li class="client-item">
-                <a  class="client-link link" href="" aria-label="FOSTER PETERS" target="_blank" rel="noopener noreferrer">
-                    <svg class="client-icon" width="106" height="60">
+            <li class="client__item">
+                <a  class="client__link link" href="" aria-label="FOSTER PETERS" target="_blank" rel="noopener noreferrer">
+                    <svg class="client__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-logo4"></use>
                       </svg>
                 </a>
             </li>
-            <li class="client-item">
-                <a  class="client-link link" href="" aria-label="BRAND" target="_blank" rel="noopener noreferrer">
-                    <svg class="client-icon" width="106" height="60">
+            <li class="client__item">
+                <a  class="client__link link" href="" aria-label="BRAND" target="_blank" rel="noopener noreferrer">
+                    <svg class="client__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-logo5"></use>
                       </svg>
                 </a>
             </li>
-            <li class="client-item">
-                <a  class="client-link link" href="" aria-label="TAG LINE" target="_blank" rel="noopener noreferrer">
-                    <svg class="client-icon" width="106" height="60">
+            <li class="client__item">
+                <a  class="client__link link" href="" aria-label="TAG LINE" target="_blank" rel="noopener noreferrer">
+                    <svg class="client__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-logo6"></use>
                       </svg>
                 </a>
@@ -346,22 +361,27 @@
     </div>
 </section>
     </main> 
+
+
+    <!-- --------------------------------FOOTER------------------------- -->
+
+
     <footer class="footer">
     <div class="container footer-block">
 
         <div>
-        <a href="./index.html" lang="en" class="logo link footer-logo"> <span class="accent">Web</span> <span class="white-logo">Studio</span> </a>
+        <a href="./index.html" lang="en" class="logo link footer-logo"> <span class="logo logo--accent">Web</span> <span class="logo--white-accent">Studio</span> </a>
 
       
 <address class="footer-address">
     <ul class="list footer-list">
-        <li class="nav-item">
+        <li class="nav__item">
             <a href="" class="address link">м. Київ, пр-т Лесі Українки, 26</a>
         </li>
-        <li class="nav-item">
+        <li class="nav__item">
             <a href="mailto:info@devstudio.com" class="link footer-mail">info@devstudio.com</a>
         </li>
-        <li class="nav-item">
+        <li class="nav__item">
            <a href="tel:+380961111111" class="link footer-phone">+38 096 111 11 11</a> 
         </li>
     </ul>
