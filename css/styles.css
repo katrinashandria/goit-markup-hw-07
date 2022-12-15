@@ -232,7 +232,14 @@ img {
     color: var(--accent-color);
 } */
 
+/* .icon-mail {
+    fill: currentColor;
+    }
+    
 
+.icon-mobile {
+    fill: currentColor;
+} */
 
 
 /* -------------------hero---------------------- */
@@ -955,10 +962,7 @@ width: 358px;
     animation-fill-mode: both; */
 }
 
-.modal.data-modal {
-    /* animation-name: scale-up-center; */
 
-    }
 
 .backdrop.is-hidden .modal {
     opacity: 0;
