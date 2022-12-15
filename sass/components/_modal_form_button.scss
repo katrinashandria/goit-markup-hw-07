@@ -12,12 +12,14 @@
     border-color: transparent;
     cursor: pointer;
     letter-spacing: 0.06em;
+
+    &:hover {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+        transform: transition var(--anim-fast);
+    }
     
 }
 
 
-.modal-form-button:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-    transform: transition var(--anim-fast);
-}
