@@ -8,12 +8,13 @@
 
 
 //Components
-@import "./components/section";
+
 @import "./components/container";
 @import "./components/backdrop";
 
 
 // Layouts
+@import "./layouts/section";
 @import "./layouts/modal";
 @import "./layouts/modal_button";
 @import "./layouts/modal_form_button";
