@@ -1,29 +1,34 @@
 //Variable styles
 @import "./utils/variables";
+@import "./utils/visually_hidden";
 
 //Base styles
 @import "./base/base";
 @import "./base/reset";
-@import "./base/visually_hidden";
+
 
 //Components
 @import "./components/section";
 @import "./components/container";
-@import "./components/button";
-@import "./components/logo";
-@import "./components/header";
-@import "./components/nav";
-@import "./components/hero";
-@import "./components/advantages";
-@import "./components/whatwedo";
-@import "./components/team";
-@import "./components/clients";
-@import "./components/filter_kit";
-@import "./components/gallery";
-@import "./components/footer";
 @import "./components/backdrop";
-@import "./components/modal";
-@import "./components/modal_button";
-@import "./components/modal_form_button";
+
+
+// Layouts
+@import "./layouts/modal";
+@import "./layouts/modal_button";
+@import "./layouts/modal_form_button";
+@import "./layouts/logo";
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/hero";
+@import "./layouts/advantages";
+@import "./layouts/whatwedo";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/filter_kit";
+@import "./layouts/gallery";
+@import "./layouts/footer";
+@import "./layouts/button";
+
 
 
