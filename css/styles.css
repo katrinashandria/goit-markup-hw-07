@@ -903,7 +903,7 @@ width: 358px;
 
 
 
-.backdrop {
+/* .backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -922,7 +922,7 @@ width: 358px;
     visibility: hidden;
     pointer-events: none;
 
-}
+} */
 
 .modal {
     position: absolute;
@@ -954,7 +954,7 @@ width: 358px;
     transform: translateX(-50%) translateY(-70%);
 }
 
-.modal-button {
+/* .modal-button {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -976,7 +976,7 @@ width: 358px;
 
 .modal-button:hover, .modal-button:focus {
     fill: var(--accent-color);
-}
+} */
 
 .modal-name {
     font-family: Roboto;
@@ -1091,7 +1091,7 @@ top: 11px;
     
 }
 
-.modal-form-button {
+/* .modal-form-button {
    
     padding: 10px 52px;
     font-family: 'Roboto';
@@ -1113,7 +1113,7 @@ top: 11px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     transform: transition var(--anim-fast);
-}
+} */
 
 .check {
     display: block;
