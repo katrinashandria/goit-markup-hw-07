@@ -62,45 +62,6 @@ html {
           box-sizing: border-box;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  -webkit-transition: opacity 350ms linear, visibility 350ms linear;
-  transition: opacity 350ms linear, visibility 350ms linear;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section--no-padding {
-  padding-bottom: 0px;
-}
-
-.section--no-top {
-  padding-top: 0px;
-}
-
 .modal {
   position: absolute;
   top: 50%;
@@ -375,6 +336,106 @@ html {
 .footer-logo {
   display: block;
   margin-bottom: 20px;
+}
+
+.filter-list .filter-item + .filter-item {
+  margin-left: 9px;
+}
+
+.filter-button {
+  display: inline-block;
+  padding: 6px 25px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background: var(--editional-color);
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
+  -webkit-transition: color var(--anim-fast), background-color var(--anim-fast), -webkit-box-shadow var(--anim-fast);
+  transition: color var(--anim-fast), background-color var(--anim-fast), -webkit-box-shadow var(--anim-fast);
+  transition: color var(--anim-fast), background-color var(--anim-fast), box-shadow var(--anim-fast);
+  transition: color var(--anim-fast), background-color var(--anim-fast), box-shadow var(--anim-fast), -webkit-box-shadow var(--anim-fast);
+}
+
+.filter-button:hover, .filter-button:focus {
+  color: var(--main-background-color);
+  background: var(--accent-color);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-list {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--main-background-color);
+  background: var(--accent-color);
+  border-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn--hero-look {
+  display: inline-block;
+  padding: 10px 32px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transition: opacity 350ms linear, visibility 350ms linear;
+  transition: opacity 350ms linear, visibility 350ms linear;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section--no-padding {
+  padding-bottom: 0px;
+}
+
+.section--no-top {
+  padding-top: 0px;
 }
 
 .header {
@@ -799,47 +860,6 @@ html {
   fill: var(--accent-color);
 }
 
-.filter-list .filter-item + .filter-item {
-  margin-left: 9px;
-}
-
-.filter-button {
-  display: inline-block;
-  padding: 6px 25px;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  background: var(--editional-color);
-  border-radius: 4px;
-  border-color: transparent;
-  cursor: pointer;
-  -webkit-transition: color var(--anim-fast), background-color var(--anim-fast), -webkit-box-shadow var(--anim-fast);
-  transition: color var(--anim-fast), background-color var(--anim-fast), -webkit-box-shadow var(--anim-fast);
-  transition: color var(--anim-fast), background-color var(--anim-fast), box-shadow var(--anim-fast);
-  transition: color var(--anim-fast), background-color var(--anim-fast), box-shadow var(--anim-fast), -webkit-box-shadow var(--anim-fast);
-}
-
-.filter-button:hover, .filter-button:focus {
-  color: var(--main-background-color);
-  background: var(--accent-color);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.filter-list {
-  margin-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .project-grid {
   padding: 30px 24px;
 }
@@ -1114,24 +1134,4 @@ p.project-type-title {
 
 .form-field {
   position: relative;
-}
-
-.btn {
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: var(--main-background-color);
-  background: var(--accent-color);
-  border-color: transparent;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn--hero-look {
-  display: inline-block;
-  padding: 10px 32px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }/*# sourceMappingURL=main.css.map */

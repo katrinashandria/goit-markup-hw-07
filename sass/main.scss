@@ -8,17 +8,18 @@
 
 
 //Components
-
+@import "./components/modal";
+@import "./components/modal_button";
+@import "./components/modal_form_button";
+@import "./components/logo";
+@import "./components/filter_kit";
+@import "./components/button";
 @import "./components/container";
 @import "./components/backdrop";
 
 
 // Layouts
 @import "./layouts/section";
-@import "./layouts/modal";
-@import "./layouts/modal_button";
-@import "./layouts/modal_form_button";
-@import "./layouts/logo";
 @import "./layouts/header";
 @import "./layouts/nav";
 @import "./layouts/hero";
@@ -26,10 +27,9 @@
 @import "./layouts/whatwedo";
 @import "./layouts/team";
 @import "./layouts/clients";
-@import "./layouts/filter_kit";
 @import "./layouts/gallery";
 @import "./layouts/footer";
-@import "./layouts/button";
+
 
 
 
